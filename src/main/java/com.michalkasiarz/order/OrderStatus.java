@@ -1,2 +1,4 @@
-package com.michalkasiarz.order;public class OrderStatus {
+package com.michalkasiarz.order;
+
+public class OrderStatus {
 }

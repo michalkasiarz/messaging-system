@@ -1,2 +1,4 @@
-package com.michalkasiarz.subscriptionChannel;public class Email {
+package com.michalkasiarz.subscriptionChannel;
+
+public class Email {
 }

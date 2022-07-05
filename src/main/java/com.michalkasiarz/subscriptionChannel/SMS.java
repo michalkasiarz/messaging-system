@@ -1,2 +1,4 @@
-package com.michalkasiarz.subscriptionChannel;public class Phone {
+package com.michalkasiarz.subscriptionChannel;
+
+public class SMS {
 }

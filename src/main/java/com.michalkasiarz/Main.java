@@ -1,2 +1,8 @@
-package com.michalkasiarz;public class Main {
+package com.michalkasiarz;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+    }
 }

@@ -10,15 +10,21 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Order order = new Order(4222L, OrderStatus.IN_DELIVERY);
+        Order order = new Order(4222L, OrderStatus.PLACED);
+
+        order.notifyObservers();
 
         Email email = new Email();
         Push push = new Push();
         SMS sms = new SMS();
 
-        email.updateOrderStatus(order);
-        push.updateOrderStatus(order);
-        sms.updateOrderStatus(order);
+        order.registerObserver(email);
+        order.registerObserver(push);
+        order.registerObserver(sms);
+
+        order.updateOrder(OrderStatus.ACCEPTED);
+
+        order.updateOrder(OrderStatus.IN_DELIVERY);
 
     }
 }

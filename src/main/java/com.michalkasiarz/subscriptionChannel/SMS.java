@@ -2,9 +2,9 @@ package com.michalkasiarz.subscriptionChannel;
 
 import com.michalkasiarz.order.Order;
 
-public class SMS {
+public class SMS implements Observer {
 
-    public void updateOrderStatus(Order order) {
-        System.out.println("SMS with the updated status of the order no. " + order.getOrderNumber() + " to " + order.getOrderStatus() + " has been sent.");
+    public void updateOrder(Order order) {
+        System.out.println("SMS:  Status of the order no. " + order.getOrderNumber() + " has changed to: " + order.getOrderStatus() + ".");
     }
 }
